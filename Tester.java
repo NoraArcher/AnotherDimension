@@ -16,7 +16,7 @@ public class Tester {
 
     System.out.println(Arrays.toString(ArrayOps.largestInRows(deep1)));
 
-
+    System.out.println(ArrayOps.sum(deep1));
   }
 
 }
