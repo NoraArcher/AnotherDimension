@@ -22,33 +22,48 @@ public class Tester {
     int[][] depp3 = { {  2,  2, 2 },
                       {  2, 2, 2 }
                     };
+    int[][] depp4 = { {  2,  4, 2 },
+                      {  2, 2, 2 }
+                    };
 
-    //System.out.println(ArrayOps.sum(arr1));
-    //System.out.println(ArrayOps.sum(arr2));
-    //System.out.println(ArrayOps.sum(arrempty));
+    System.out.println("4A Test:");
+    System.out.println(ArrayOps.sum(arr1));
+    System.out.println(ArrayOps.sum(arr2));
+    System.out.println(ArrayOps.sum(arrempty));
 
-    //System.out.println(ArrayOps.largest(arr1));
-    //System.out.println(ArrayOps.largest(arr2));
+    System.out.println("\n4B Test:");
+    System.out.println(ArrayOps.largest(arr1));
+    System.out.println(ArrayOps.largest(arr2));
 
-    //System.out.println(Arrays.toString(ArrayOps.sumRows(deep1)));
-    //System.out.println(Arrays.toString(ArrayOps.sumRows(deep2)));
+    System.out.println("\n4C Test:");
+    System.out.println(Arrays.toString(ArrayOps.sumRows(deep1)));
+    System.out.println(Arrays.toString(ArrayOps.sumRows(deep2)));
 
-    //System.out.println(Arrays.toString(ArrayOps.largestInRows(deep1)));
-    //System.out.println(Arrays.toString(ArrayOps.largestInRows(deep2)));
+    System.out.println("\n4D Test:");
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(deep1)));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(deep2)));
 
-    //System.out.println(ArrayOps.sum(deep1));
-    //System.out.println(ArrayOps.sum(deep2));
+    System.out.println("\n4E Test:");
+    System.out.println(ArrayOps.sum(deep1));
+    System.out.println(ArrayOps.sum(deep2));
 
-    //System.out.println(Arrays.toString(ArrayOps.sumCols(deep1)));
-    //System.out.println(Arrays.toString(ArrayOps.sumCols(deep2)));
+    System.out.println("\n5A Test:");
+    System.out.println(Arrays.toString(ArrayOps.sumCols(deep1)));
+    System.out.println(Arrays.toString(ArrayOps.sumCols(deep2)));
 
-    //System.out.println(ArrayOps.isRowMagic(depp1));
-    //System.out.println(ArrayOps.isRowMagic(depp2));
-    //System.out.println(ArrayOps.isRowMagic(depp3));
+    System.out.println("\n5B Test:");
+    System.out.println(ArrayOps.isRowMagic(depp1));
+    System.out.println(ArrayOps.isRowMagic(depp2));
+    System.out.println(ArrayOps.isRowMagic(depp3));
 
+    System.out.println("\n5C Test:");
     System.out.println(ArrayOps.isColMagic(depp1));
     System.out.println(ArrayOps.isColMagic(depp2));
     System.out.println(ArrayOps.isColMagic(depp3));
+
+    System.out.println("\n5D Test:");
+    System.out.println(ArrayOps.isLocationMagic(depp4, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(depp4, 1, 1));
   }
 
 }
