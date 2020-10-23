@@ -54,15 +54,25 @@ public class ArrayOps {
     return arr;
   }
 
-  ///UNDONE BELOW
+  public static boolean numSame(int[] arr) {
+    boolean same = true;
+    for (int i = 1; i < arr.length; i++) {
+      if (arr[i] != arr[i - 1]) {
+        same = false;
+      }
+    }
+    return same;
+  }
 
   public static boolean isRowMagic(int[][] matrix) {
-    return false;
+    return numSame(sumRows(matrix));
   }
 
   public static boolean isColMagic(int[][] matrix) {
-    return false;
+    return numSame(sumCols(matrix));
   }
+
+    ///UNDONE BELOW
 
   public static boolean isLocationMagic(int[][] matrix,
                                         int row, int col) {

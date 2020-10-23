@@ -11,6 +11,17 @@ public class Tester {
                       {  7, -2,  2,  1 },
                       { -5, -2,  2, -9 }
                     };
+    int[][] depp1 = { {  1,  2, 3, 4 },
+                      {  2, 3,  4,  1 },
+                      { 3, 4,  1, 2 }
+                    };
+    int[][] depp2 = { {  1,  1, 1 },
+                      {  2, 2, 2 },
+                      { 3,  3, 3 }
+                    };
+    int[][] depp3 = { {  2,  2, 2 },
+                      {  2, 2, 2 }
+                    };
 
     //System.out.println(ArrayOps.sum(arr1));
     //System.out.println(ArrayOps.sum(arr2));
@@ -28,8 +39,16 @@ public class Tester {
     //System.out.println(ArrayOps.sum(deep1));
     //System.out.println(ArrayOps.sum(deep2));
 
-    System.out.println(Arrays.toString(ArrayOps.sumCols(deep1)));
-    System.out.println(Arrays.toString(ArrayOps.sumCols(deep2)));
+    //System.out.println(Arrays.toString(ArrayOps.sumCols(deep1)));
+    //System.out.println(Arrays.toString(ArrayOps.sumCols(deep2)));
+
+    //System.out.println(ArrayOps.isRowMagic(depp1));
+    //System.out.println(ArrayOps.isRowMagic(depp2));
+    //System.out.println(ArrayOps.isRowMagic(depp3));
+
+    System.out.println(ArrayOps.isColMagic(depp1));
+    System.out.println(ArrayOps.isColMagic(depp2));
+    System.out.println(ArrayOps.isColMagic(depp3));
   }
 
 }
